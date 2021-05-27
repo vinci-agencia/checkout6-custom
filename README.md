@@ -7,13 +7,29 @@ Usar tanto no checkout6-custom.css quanto no checkout-confirmation4-custom.css.
 
 ```css
 `:root {
-    --theme-color-1: #776E6B;
-    /*cor background secundaria, não mudar com frequencia*/
-    --theme-color-2: #d4a60b;
+    --theme-color-1: rgb(195, 0, 255);
+    /*cor background secundaria, deixe a cor que está se não sabe o que faz*/
+
+    --main-color: tomato;
     /*cor background principal, butões internos etc*/
-    --header-bg: #54a020;
-    /*cor background header e footer*/
-    --header-color: white;
-    /*cor header e footer, alterar para cor escura caso --header-bg seja branco*/
+
+    --header-bg: turquoise;
+    /*cor do header:*/
+
+    --header-border: yellow;
+    /*cor da border bottom do header:*/
+
+    --footer-border: darkblue;
+    /*footer border*/
+
+    --footer-bg: orange;
+    /*cor de fundo do footer*/
+
+    --footer-bottom-bg: grey;
+    /*cor de fundo da parte inferior do footer*/
+
+    --footer-color:green;
+    /*cor dos elementos do footer*/
+
 }`
 ```

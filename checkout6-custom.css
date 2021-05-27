@@ -4,16 +4,30 @@
 /* TEMPLATE VARIABLES */
 
 :root {
-    --theme-color-1: #776E6B;
-    /*cor background secundaria, não mudar com frequencia*/
-    --theme-color-2: #EA5D0E;
+    --theme-color-1: rgb(195, 0, 255);
+    /*cor background secundaria, deixe a cor que está se não sabe o que faz*/
+
+    --main-color: tomato;
     /*cor background principal, butões internos etc*/
-    --header-bg: #fff;
-    /*cor background header e footer*/
-    --header-color: #EA5D0E;
-    /*cor header e footer, alterar para cor escura caso --header-bg seja branco*/
-    --footer-bg: #EA5D0E;
-    --footer-bg-secundary: #353233;
+
+    --header-bg: turquoise;
+    /*cor do header:*/
+
+    --header-border: yellow;
+    /*cor da border bottom do header:*/
+
+    --footer-border: darkblue;
+    /*footer border*/
+
+    --footer-bg: orange;
+    /*cor de fundo do footer*/
+
+    --footer-bottom-bg: grey;
+    /*cor de fundo da parte inferior do footer*/
+
+    --footer-color:green;
+    /*cor dos elementos do footer*/
+
 }
 
 *,
@@ -27,7 +41,7 @@ body {
 .topo {
     background: var(--header-bg);
     padding: 15px 0;
-    border-bottom: 2px solid var(--header-color);
+    border-bottom: 2px solid var(--header-border);
 }
 
 .topo img {
@@ -39,7 +53,7 @@ body {
 .default-modal-body,
 .default-modal,
 .default-modal i:before {
-    background: var(--theme-color-2);
+    background: var(--main-color);
     color: #FFFFFF;
 }
 
@@ -98,7 +112,7 @@ body {
 
 .dep-links {
     margin-bottom: 30px;
-    color: var(--header-color) !important;
+    color: var(--footer-color) !important;
 }
 
 .dep-links li {
@@ -111,7 +125,7 @@ a.icon-social {
 }
 
 .dep-links h4 {
-    color: var(--header-color);
+    color: var(--footer-color);
     font-weight: 500;
     margin-bottom: 15px;
     font-size: 17px;
@@ -122,7 +136,7 @@ a.icon-social {
 .dep-links a {
     font-weight: 400;
     font-size: 15px;
-    color: var(--header-color);
+    color: var(--footer-color);
     font-family: Rockwell, Kameron, sans-serif;
 }
 
@@ -143,7 +157,7 @@ a.icon-social {
 **********************************************************/
 
 .container-vinci {
-    background: var(--footer-bg);
+    background: var(--footer-bottom-bg);
 }
 
 .container-vinci .max-container {
@@ -168,7 +182,7 @@ a.icon-social {
     font-weight: 300;
     font-size: 9px;
     text-align: center;
-    color: var(--header-color);
+    color: var(--footer-color);
     letter-spacing: 1px;
     font-family: Rockwell, Kameron, sans-serif;
 }
@@ -187,7 +201,7 @@ a.icon-social {
 
 footer .bold {
     font-weight: 700;
-    color: var(--header-color);
+    color: var(--footer-color);
     font-size: 9px;
     display: inline-block;
     margin-right: 10px
@@ -219,7 +233,7 @@ footer .bold {
 
 .container-vinci span:last-child p {
     font-weight: 700;
-    color: var(--header-color);
+    color: var(--footer-color);
     font-size: 9px;
     display: inline-block;
     margin-right: 20px;
@@ -326,7 +340,7 @@ footer .bold {
 
 button.vbw1 {
     color: white !important;
-    background: var(--theme-color-2) !important;
+    background: var(--main-color) !important;
 }
 
 .container {
@@ -351,7 +365,7 @@ button.vbw1 {
 .container-footer {
     z-index: 99;
     position: relative;
-    border-top: 2px solid var(--header-color);
+    border-top: 2px solid var(--footer-border);
     color: var(--header-color);
 }
 
@@ -3340,7 +3354,7 @@ body.ie8 .qdBoletoAlertPreLoading {
     .vtexIdUI .modal-body,
     .vtexIdUI,
     .vtexIdUI .modal-header {
-        background: var(--theme-color-2) !important;
+        background: var(--main-color) !important;
         border: none !important;
         box-shadow: none !important;
     }
@@ -3368,7 +3382,7 @@ body.ie8 .qdBoletoAlertPreLoading {
         display: none;
     }
     .vtexIdUI .modal-header .close {
-        background: var(--theme-color-2) !important;
+        background: var(--main-color) !important;
         font-size: 25px !important;
         width: 34px;
         font-weight: 300 !important;
@@ -3424,7 +3438,7 @@ body.ie8 .qdBoletoAlertPreLoading {
     }
     .vtexIdUI form {
         margin: 0;
-        background: var(--theme-color-2);
+        background: var(--main-color);
     }
     #vtexIdContainer .control-label * {
         font-weight: 600;
@@ -3547,14 +3561,14 @@ body.ie8 .qdBoletoAlertPreLoading {
     }
     .vtex-omnishipping-1-x-deliveryChannelsToggle {
         border: solid 0px red !important;
-        background: var(--theme-color-2) !important;
+        background: var(--main-color) !important;
     }
     .btn-success,
     .btn-success:hover {
         /* background-color: #5bb75b; */
         /* background-image: linear-gradient(to bottom,#62c462,#51a351); */
-        background: var(--theme-color-2);
-        background-color: var(--theme-color-2) !important;
+        background: var(--main-color);
+        background-color: var(--main-color) !important;
         background-image: unset !important;
         border: 0px !important;
         transition: all .3s;
@@ -3566,15 +3580,15 @@ body.ie8 .qdBoletoAlertPreLoading {
     .table .item-link-remove i::before {
         /* content: "\f057"; */
         /* font-size: 18px; */
-        color: var(--theme-color-2);
+        color: var(--main-color);
     }
     /* font-awesome.min.css | https://io.vtex.com.br/front-libs/font-awesome/3.2.1/css/font-awesome.min.css */
     .icon-plus-sign::before {
-        color: var(--theme-color-2);
+        color: var(--main-color);
     }
     a [class^="icon-"],
     a [class*=" icon-"] {
-        color: var(--theme-color-2);
+        color: var(--main-color);
     }
     .client-profile-data .step.active,
     .client-profile-data .cart.active,
@@ -3628,7 +3642,7 @@ body.ie8 .qdBoletoAlertPreLoading {
 /* Element | https://tezbgl.myvtex.com/checkout/#/cart */
 
 .vtex-shipping-preview-0-x-frame {
-    background: var(--theme-color-2);
+    background: var(--main-color);
     z-index: -1;
     border: 0px !important;
     ;
@@ -3647,5 +3661,5 @@ body.ie8 .qdBoletoAlertPreLoading {
 }
 
 footer a:hover {
-    color: var(--header-color);
+    color: var(--footer-color);
 }
