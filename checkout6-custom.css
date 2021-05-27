@@ -3675,3 +3675,9 @@ footer a:hover {
   .add-item-attachment-container .btn{
     background-color: var(--main-color) !important;
   }
+
+  footer [class^="icon-"], footer [class*=" icon-"] {
+    width: unset;
+    height: unset;
+    background-image: unset;
+  }
