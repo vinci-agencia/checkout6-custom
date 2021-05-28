@@ -33,3 +33,7 @@ Usar tanto no checkout6-custom.css quanto no checkout-confirmation4-custom.css.
 
 }`
 ```
+
+## Lembre de alterar as informações do cliente no footer
+
+Atendimento, redes sociais e formas de pagamento.
