@@ -1,34 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* TEMPLATE VARIABLES */
 
-:root {
-    --theme-color-1: grey;
-    /*cor background secundaria, deixe a cor que está se não sabe o que faz*/
-
-    --main-color: tomato;
-    /*cor background principal, butões internos etc*/
-
-    --header-bg: turquoise;
-    /*cor do header:*/
-
-    --header-border: yellow;
-    /*cor da border bottom do header:*/
-
-    --footer-border: darkblue;
-    /*footer border*/
-
-    --footer-bg: orange;
-    /*cor de fundo do footer*/
-
-    --footer-bottom-bg: grey;
-    /*cor de fundo da parte inferior do footer*/
-
-    --footer-color:green;
-    /*cor dos elementos do footer*/
-
-}
 
 *,
 body {
@@ -245,12 +218,14 @@ footer .bold {
         align-items: center;
         text-align: center;
     }
+
     .container-input #email {
         width: 100%;
         margin: 20px auto;
         margin-bottom: 5px;
         box-sizing: border-box;
     }
+
     .container-input .btn-send {
         width: 100%;
         box-sizing: border-box;
@@ -266,26 +241,33 @@ footer .bold {
     .container-input #email {
         text-align: center;
     }
+
     .icon-pag-container {
         margin-bottom: 10px;
     }
+
     .container-links {
         display: unset;
     }
+
     .container-footer {
         padding: 50px 0;
     }
+
     .footer-links {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
+
     .dep-links {
         margin: 0 auto;
     }
+
     .dep-links {
         margin-top: 20px;
     }
+
     .container-vinci .max-container {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -295,20 +277,24 @@ footer .bold {
         text-align: center;
         padding: 0px 0 20px;
     }
+
     .logo-vinci {
         margin: 20px 0;
         flex-direction: column-reverse;
         align-items: center;
         text-align: center;
     }
+
     .logo-vinci p {
         margin: 0 auto;
         text-align: center;
         margin-bottom: 5px;
     }
+
     .container-vinci .max-container>* {
         flex-direction: column;
     }
+
     .container-vinci-content>span {
         margin-top: 20px;
     }
@@ -322,9 +308,11 @@ footer .bold {
     .container-vinci-content>span:nth-child(1) {
         text-align: left;
     }
+
     .container-vinci-content>span:nth-child(3) {
         text-align: right;
     }
+
     .container-vinci .max-container>* {
         flex-direction: row;
     }
@@ -348,6 +336,7 @@ button.vbw1 {
 }
 
 @media all and (max-width: 490px) {
+
     /* checkout6-custom.css | http://tezbgl.vtexlocal.com.br/files/checkout6-custom.css?v=48f87958 */
     .link-choose-more-products {
         /* margin-right: 15px; */
@@ -1046,6 +1035,7 @@ a:active {
 }
 
 @media (max-width:767px) {
+
     .checkout-qd-v1-footer-structure .footer-qd-v1-info-company-content,
     .checkout-qd-v1-footer-structure .footer-qd-v1-store-footer-extra {
         padding: 15px
@@ -1096,10 +1086,12 @@ a:active {
     body {
         padding: 0
     }
+
     body>* {
         padding-left: 20px;
         padding-right: 20px
     }
+
     body .container-cart {
         padding: 0
     }
@@ -2688,6 +2680,7 @@ body.body-cart .totalizers .monetary {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg)
     }
+
     100% {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg)
@@ -3342,16 +3335,20 @@ body.ie8 .qdBoletoAlertPreLoading {
 /*login*/
 
 @media (min-width:10px) {
+
     /*login*/
     #vtexIdContainer {
         position: fixed !important;
     }
+
     #vtexIdUI-auth-selector {
         display: block !important;
     }
+
     #vtexIdUI-global-loader {
         background: #0000008a !important;
     }
+
     .vtexIdUI .modal-body,
     .vtexIdUI,
     .vtexIdUI .modal-header {
@@ -3359,6 +3356,7 @@ body.ie8 .qdBoletoAlertPreLoading {
         border: none !important;
         box-shadow: none !important;
     }
+
     #vtexIdContainer .btn {
         border-radius: 0px;
         box-shadow: none;
@@ -3369,12 +3367,14 @@ body.ie8 .qdBoletoAlertPreLoading {
         align-items: center;
         justify-content: center;
     }
+
     #vtexIdContainer .btn *:not(i) {
         color: #fff;
         font-size: 15px;
         text-transform: uppercase;
         font-weight: 700;
     }
+
     #vtexIdContainer .btn i {
         opacity: 0.8;
         font-size: 25px;
@@ -3382,6 +3382,7 @@ body.ie8 .qdBoletoAlertPreLoading {
         margin-right: 15px;
         display: none;
     }
+
     .vtexIdUI .modal-header .close {
         background: var(--main-color) !important;
         font-size: 25px !important;
@@ -3391,14 +3392,17 @@ body.ie8 .qdBoletoAlertPreLoading {
         border: none !important;
         box-shadow: none !important;
     }
+
     #vtexIdContainer .modal-header span {
         font-size: 0;
     }
+
     #vtexIdContainer input {
         height: 50px;
         border: 0;
         padding: 0px 15px;
     }
+
     #vtexIdContainer .modal-header span::before {
         background: url(/arquivos/logo.png) no-repeat;
         content: "";
@@ -3409,9 +3413,11 @@ body.ie8 .qdBoletoAlertPreLoading {
         margin: 0 auto;
         display: block;
     }
+
     #vtexIdContainer .modal-footer {
         background: white !important;
     }
+
     .vtexIdUI a {
         color: var(--theme-color-1) !important;
         text-transform: uppercase !important;
@@ -3421,15 +3427,19 @@ body.ie8 .qdBoletoAlertPreLoading {
         display: flex !important;
         align-items: center !important;
     }
+
     .vtexIdUI a i {
         margin-right: 10px;
     }
+
     .vtexIdUI .modal-body {
         margin-bottom: 20px;
     }
+
     #vtexIdContainer .modal-body a {
         color: #fff !important;
     }
+
     #vtexIdContainer .modal-body a {
         color: #fff !important;
         font-size: 13px !important;
@@ -3437,40 +3447,49 @@ body.ie8 .qdBoletoAlertPreLoading {
         font-weight: 300 !important;
         /* float: unset; */
     }
+
     .vtexIdUI form {
         margin: 0;
         background: var(--main-color);
     }
+
     #vtexIdContainer .control-label * {
         font-weight: 600;
         color: #fff;
         text-transform: uppercase;
     }
+
     /** tratamento tela de esqueci minha senha */
     .vtexIdUI-header.row-fluid {
         display: none;
     }
+
     .vtexid-password-requirements-description {
         width: 100%;
         display: block;
         text-align: center;
     }
+
     .vtexIdUI .muted {
         color: white !important;
         margin-bottom: 7px;
     }
+
     .vtexid-password-requirements {
         color: white !important;
     }
+
     .vtexid-password-requirements-list {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .vtexIdUI {
         max-height: 654.5px;
     }
+
     .vtexid-password-requirements-list {
         margin-left: 0 !important;
     }
@@ -3483,57 +3502,69 @@ body.ie8 .qdBoletoAlertPreLoading {
     #vtexIdUI-change-pswd>form:nth-child(2)>div:nth-child(1)>div:nth-child(4) {
         font-size: 11px;
     }
+
     #vtexIdContainer .modal-header span::before {
         /* height: 150px; */
         height: 100px;
     }
+
     .vtexIdUI .modal-body {
         /* margin-bottom: 20px; */
         margin-bottom: 0px;
     }
+
     #vtexIdContainer input {
         /* height: 50px; */
         height: 41px;
     }
+
     #vtexIdContainer .btn {
         /* height: 50px; */
         height: 42px;
         font-size: 14px;
     }
+
     .vtexIdUI a {
         /* font-size: 16px !important; */
         font-size: 14px !important;
     }
+
     .vtexIdUI {
         /* top: 15%; */
         top: 8%;
         max-height: 590px;
     }
+
     .vtexIdUI button,
     .vtexIdUI input,
     .vtexIdUI label {
         /* font-size: 14px; */
         font-size: 13px;
     }
+
     .vtexIdUI .vtexIdUI-classic-login-control input,
     .vtexIdUI .vtexIdUI-change-pswd input,
     .vtexIdUI .vtexIdUI-change-exp-pswd input {
         /* font-size: 16px; */
         font-size: 14px;
     }
+
     /* vtexid.css | https://io.vtex.com.br/vtex-id-ui/3.22.2/style/vtexid.css */
     .vtexIdUI .modal-header {
         /* padding: 9px 15px; */
         padding: 0px !important;
     }
+
     .vtexIdUI h4 {
         max-height: 85px;
     }
+
     /* vtexid.css | https://io.vtex.com.br/vtex-id-ui/3.22.2/style/vtexid.css */
     #vtexIdContainer {
         padding: 5px !important;
         box-sizing: border-box !important;
     }
+
     #vtexIdContainer .btn {
         max-width: 95%;
         margin: auto;
@@ -3545,6 +3576,7 @@ body.ie8 .qdBoletoAlertPreLoading {
         max-height: 90vh !important;
         overflow-y: auto !important;
     }
+
     /* vtexid.css | https://io.vtex.com.br/vtex-id-ui/3.22.2/style/vtexid.css */
     .vtexIdUI {
         /* top: 15%; */
@@ -3560,10 +3592,12 @@ body.ie8 .qdBoletoAlertPreLoading {
         box-shadow: none !important;
         text-shadow: none !important;
     }
+
     .vtex-omnishipping-1-x-deliveryChannelsToggle {
         border: solid 0px red !important;
         background: var(--main-color) !important;
     }
+
     .btn-success,
     .btn-success:hover {
         /* background-color: #5bb75b; */
@@ -3574,66 +3608,81 @@ body.ie8 .qdBoletoAlertPreLoading {
         border: 0px !important;
         transition: all .3s;
     }
+
     .btn-success:hover {
         opacity: .8;
     }
+
     /* checkout6-custom.css | https://tezbgl.myvtex.com/files/checkout6-custom.css?v=8eaf4e91 */
     .table .item-link-remove i::before {
         /* content: "\f057"; */
         /* font-size: 18px; */
         color: var(--main-color);
     }
+
     /* font-awesome.min.css | https://io.vtex.com.br/front-libs/font-awesome/3.2.1/css/font-awesome.min.css */
     .icon-plus-sign::before {
         color: var(--main-color);
     }
+
     a [class^="icon-"],
     a [class*=" icon-"] {
         color: var(--main-color);
     }
+
     .client-profile-data .step.active,
     .client-profile-data .cart.active,
     .client-profile-data .totalizers.active {
         /* border-color: #aca9a952; */
         border-color: transparent !important;
     }
+
     .container-footer .max-container {
         margin: auto;
     }
+
     /* checkout6-custom.css | https://tezbgl.myvtex.com/files/checkout6-custom.css?v=8eaf4e91 */
     .client-profile-data .step {
         padding: 5px;
         box-sizing: border-box;
     }
+
     .shipping-data .step {
         padding: 5px;
         box-sizing: border-box;
     }
+
     .payment-data .accordion-group {
         padding: 5px;
         box-sizing: border-box;
     }
+
     /* Element | https://tezbgl.myvtex.com/checkout/#/shipping */
     .cart-fixed {
         padding: 5px;
         box-sizing: border-box;
     }
+
     /* Element | https://tezbgl.myvtex.com/checkout/#/shipping */
     .cart-fixed {
         margin-bottom: 71px;
     }
+
     /* Element | https://tezbgl.myvtex.com/checkout/#/shipping */
     #edit-address-button {
         color: #807e7e !important;
     }
+
     /* Element | https://tezbgl.myvtex.com/checkout/#/shipping */
     #new-address-button {
         color: #807e7e !important;
     }
+
     /* Element | https://tezbgl.myvtex.com/checkout/#/shipping */
     #back-to-address-list {
         color: #807e7e !important;
     }
+
     li {
         list-style: none !important;
     }
@@ -3667,17 +3716,18 @@ footer a:hover {
 
 
 
-  .btn{
+.btn {
     background-image: none !important;
     border: 0px !important;
-  }
+}
 
-  .add-item-attachment-container .btn{
+.add-item-attachment-container .btn {
     background-color: var(--main-color) !important;
-  }
+}
 
-  footer [class^="icon-"], footer [class*=" icon-"] {
+footer [class^="icon-"],
+footer [class*=" icon-"] {
     width: unset;
     height: unset;
     background-image: unset;
-  }
+}
