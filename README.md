@@ -6,6 +6,7 @@
 - Suba o arquivo checkout-fallback.css na vtex, como qualquer outro arquivo, que será utilizado em caso de erro na requisição
 - Altere as cores das variaveis no arquivo **checkout-content.js**
 
+### Exemplo:
 ```css
 `:root {
     --theme-color-1: rgb(195, 0, 255);
@@ -34,6 +35,7 @@
 
 }`
 ```
+
 
 - Cole o header e footer nos seus respectivos lugares
 - Cole o conteudo de **checkout-content.js** no lugar de **checkout6-custom.js** e **checkout-confirmation4-custom.js**

@@ -1,4 +1,10 @@
 (async function() {
+    document.querySelector('body').style.opacity = '0';
+
+    function showBody() {
+        document.querySelector('body').style.transition = 'opacity .3s';
+        document.querySelector('body').style.opacity = '1';
+    }
 
     function appendStyle(innerCss) {
         const newStyle = document.createElement('style');
@@ -40,8 +46,10 @@
 
 
     try {
-        const getCss = await (await fetch('https://cdn.jsdelivr.net/gh/vinci-agencia/checkout6-custom/checkout6-custom.css')).text();
+        const getCss = await (await fetch('https://cdn.jsdelivr.net/gh/vinci-agencia/checkout6-custom/checkout-fallback.css')).text();
         appendStyle(getCss);
+        showBody();
+        console.log('%c Utilizando cdn.jsdelivr', 'color: turquoise;font-weight:bold');
 
     } catch (Error) {
         console.alert(Error)
@@ -50,9 +58,12 @@
         try {
             const getCss = await (await fetch('/arquivos/checkout-fallback.css')).text();
             appendStyle(getCss);
+            showBody();
+            console.log('%c Utilizando /arquivos/checkout-fallback.css', 'color: yellow;font-weight:bold');
         } catch (Error) {
             console.alert(Error);
-            console.log('%c Erro ao chamar fallback fallback /arquivos/checkout-fallback.css, confira se o arquivo existe', 'color: tomato; font-size:14px');
+            console.log('%c Erro ao chamar fallback fallback /arquivos/checkout-fallback.css, confira se o arquivo existe', 'color: tomato; font-size:14px;font-weight:bold');
+            showBody();
         }
     }
 
