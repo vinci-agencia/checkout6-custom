@@ -1,9 +1,10 @@
-# Checkout
+# Modelo de checkout atualizavel pelo git
 
-Usar tanto no checkout6-custom.css quanto no checkout-confirmation4-custom.css.
 
-## Favor usar as variaveis e alterar o minimo da estrutura possivel
+## Como utilizar:
 
+- Suba o arquivo checkout-fallback.css na vtex, como qualquer outro arquivo, que será utilizado em caso de erro na requisição
+- Altere as cores das variaveis no arquivo **checkout-content.js**
 
 ```css
 `:root {
@@ -33,6 +34,9 @@ Usar tanto no checkout6-custom.css quanto no checkout-confirmation4-custom.css.
 
 }`
 ```
+
+- Cole o header e footer nos seus respectivos lugares
+- Cole o conteudo de **checkout-content.js** no lugar de **checkout6-custom.js** e **checkout-confirmation4-custom.js**
 
 ## Lembre de alterar as informações do cliente no footer
 
