@@ -1095,6 +1095,7 @@ a:active {
     body .container-cart {
         padding: 0
     }
+
 }
 
 body>.container-main {
@@ -3753,4 +3754,10 @@ body.body-cart .totalizers tfoot tr .monetary {
         /* width: 100%; */
         width: unset;
     }
+}
+
+#checkout-confirmation-footer,
+#checkout-confirmation-header {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }
