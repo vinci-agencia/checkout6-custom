@@ -1,9 +1,9 @@
 (async function() {
-    document.querySelector('body').style.opacity = '0';
+    document.querySelector('html').style.opacity = '0';
 
     function showBody() {
-        document.querySelector('body').style.transition = 'opacity .3s';
-        document.querySelector('body').style.opacity = '1';
+        document.querySelector('html').style.transition = 'opacity .3s';
+        document.querySelector('html').style.opacity = '1';
     }
 
     function appendStyle(innerCss) {
