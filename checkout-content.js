@@ -44,10 +44,10 @@
 
     appendStyle(rootContent);
     try {
-        const getCss = await (await fetch('https://gitcdn.xyz/cdn/vinci-agencia/checkout6-custom/main/checkout-fallback.css')).text();
+        const getCss = await (await fetch('https://raw.githubusercontent.com/vinci-agencia/checkout6-custom/main/checkout-fallback.css')).text();
         appendStyle(getCss);
         showBody();
-        console.log('%c Utilizando gitcdn', 'color: turquoise;font-weight:bold');
+        console.log('%c Utilizando raw.githubusercontent', 'color: turquoise;font-weight:bold');
     } catch (Error) {
         console.alert(Error)
         console.log('%c Erro ao chamar cdn, usando fallback /arquivos/checkout-fallback.css', 'color: tomato; font-size:14px');
