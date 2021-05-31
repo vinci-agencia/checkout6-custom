@@ -52,28 +52,17 @@
         console.alert(Error)
         console.log('%c Erro ao chamar cdn, usando fallback /arquivos/checkout-fallback.css', 'color: tomato; font-size:14px');
 
-
         try {
-            const getCss = await (await fetch('https://cdn.jsdelivr.net/gh/vinci-agencia/checkout6-custom@latest/checkout-fallback.css')).text();
+            const getCss = await (await fetch('/arquivos/checkout-fallback.css')).text();
             appendStyle(getCss);
             showBody();
-            console.log('%c Utilizando cdn.jsdelivr', 'color: turquoise;font-weight:bold');
-
+            console.log('%c Utilizando /arquivos/checkout-fallback.css', 'color: yellow;font-weight:bold');
         } catch (Error) {
-            console.alert(Error)
-            console.log('%c Erro ao chamar cdn, usando fallback /arquivos/checkout-fallback.css', 'color: tomato; font-size:14px');
-
-            try {
-                const getCss = await (await fetch('/arquivos/checkout-fallback.css')).text();
-                appendStyle(getCss);
-                showBody();
-                console.log('%c Utilizando /arquivos/checkout-fallback.css', 'color: yellow;font-weight:bold');
-            } catch (Error) {
-                console.alert(Error);
-                console.log('%c Erro ao chamar fallback fallback /arquivos/checkout-fallback.css, confira se o arquivo existe', 'color: tomato; font-size:14px;font-weight:bold');
-                showBody();
-            }
+            console.alert(Error);
+            console.log('%c Erro ao chamar fallback fallback /arquivos/checkout-fallback.css, confira se o arquivo existe', 'color: tomato; font-size:14px;font-weight:bold');
+            showBody();
         }
+
 
     }
 
