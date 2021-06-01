@@ -15,7 +15,7 @@
 
     const rootContent = `
         :root {
-            --theme-color-1: rgb(195, 0, 255);
+            --theme-color-1: grey;
             /*cor background secundaria, deixe a cor que está se não sabe o que faz*/
         
             --main-color: tomato;

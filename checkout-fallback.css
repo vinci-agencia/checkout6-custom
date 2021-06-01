@@ -2816,7 +2816,7 @@ div.payment-data .gift-card-section {
     position: relative;
     top: -56px;
     right: -1px;
-    min-height: 496px;
+    padding-bottom: 20px;
     padding-bottom: 0;
     border-radius: 0;
     margin-bottom: -57px;
@@ -3760,4 +3760,15 @@ body.body-cart .totalizers tfoot tr .monetary {
 #checkout-confirmation-header {
     padding-left: 0px !important;
     padding-right: 0px !important;
+}
+
+
+.modal-body p:first-of-type {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.modal-body,
+.modal-body button {
+    font-size: 13px;
 }
