@@ -2816,8 +2816,7 @@ div.payment-data .gift-card-section {
     position: relative;
     top: -56px;
     right: -1px;
-    padding-bottom: 20px;
-    padding-bottom: 0;
+    padding-bottom: 20px !important;
     border-radius: 0;
     margin-bottom: -57px;
     border: #aca9a952 solid;
@@ -3771,4 +3770,28 @@ body.body-cart .totalizers tfoot tr .monetary {
 .modal-body,
 .modal-body button {
     font-size: 13px;
+}
+
+@media (max-width: 767px) {
+
+    .payment-submit-wrap .submit,
+    .payment-submit-hide .submit,
+    .btn-submit-wrapper .submit {
+        font-size: 11px !important;
+    }
+
+
+    .identified-user-hello,
+    .payment-confirmation-thanks,
+    .guest-login-title {
+        font-size: 13px !important;
+    }
+
+
+    /* Element | https://tb2404.myvtex.com/checkout/orderPlaced/?og=1136391152422 */
+
+    #app-top .f2 {
+        font-size: 26px !important;
+    }
+
 }
