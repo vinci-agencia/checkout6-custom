@@ -3799,3 +3799,7 @@ body.body-cart .totalizers tfoot tr .monetary {
 .totalizers-list .srp-summary-result{
     display:table-row !important
 }
+
+.srp-result .srp-unavailable{
+    font-size:12px;
+}
