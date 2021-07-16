@@ -1640,7 +1640,8 @@ a.link-choose-more-products.disabled {
     display: inline-block;
     letter-spacing: .6px;
     display: block;
-    width: 100%
+    width: 100%;
+    margin-top: 15px
 }
 
 #go-to-payment:hover,
