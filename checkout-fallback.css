@@ -1736,8 +1736,7 @@ a.link-choose-more-products.disabled {
 
 #go-to-payment:after,
 #go-to-shipping:after,
-.btn-go-to-payment:after,
-#payment-data-submit:after {
+.btn-go-to-payment:after {
     content: "\f054";
     display: inline-block;
     font-size: 1em;
@@ -1967,6 +1966,7 @@ a.link-choose-more-products.disabled {
     margin-right: 15px
 }
 
+/* 
 .payment-submit-wrap .submit:after,
 .payment-submit-hide .submit:after,
 .btn-submit-wrapper .submit:after {
@@ -1985,7 +1985,7 @@ a.link-choose-more-products.disabled {
     position: relative;
     margin-left: 16px;
     margin-right: 8px
-}
+} */
 
 .payment-submit-wrap i,
 .payment-submit-hide i,
@@ -2661,15 +2661,6 @@ body.body-cart .totalizers .monetary {
     border-radius: 0
 }
 
-.payment-data .payment-submit-hide {
-    display: block !important;
-    position: relative;
-    width: 99%;
-    height: 36px;
-    opacity: 1;
-    left: 0
-}
-
 .payment-data .payment-submit-hide .btn[disabled]:after {
     display: inline-block;
     content: "\f021";
@@ -2931,11 +2922,6 @@ body.ie8 .qdBoletoAlertPreLoading {
     text-align: left !important
 }
 
-.mini-cart .cart-fixed .payment-confirmation-wrap {
-    position: fixed;
-    top: -9999pc;
-    left: -9999pc
-}
 
 .mini-cart .table tbody td {
     font-weight: bold
@@ -3796,10 +3782,10 @@ body.body-cart .totalizers tfoot tr .monetary {
 
 }
 
-.totalizers-list .srp-summary-result{
-    display:table-row !important
+.totalizers-list .srp-summary-result {
+    display: table-row !important
 }
 
-.srp-result .srp-unavailable{
-    font-size:12px;
+.srp-result .srp-unavailable {
+    font-size: 12px;
 }
